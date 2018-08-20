@@ -21,7 +21,7 @@
 		1B12B5A421145ADD0014DAC3 /* VC7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12B5A321145ADD0014DAC3 /* VC7.swift */; };
 		1B12B5A621145AE50014DAC3 /* VC8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12B5A521145AE50014DAC3 /* VC8.swift */; };
 		1B12B5A821145AEF0014DAC3 /* VC9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12B5A721145AEF0014DAC3 /* VC9.swift */; };
-		1B1EC6FE212AC36A000C8C4A /* HeaderCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1EC6FD212AC36A000C8C4A /* HeaderCVC.swift */; };
+		1B1EC702212AF7ED000C8C4A /* HeaderCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1EC701212AF7ED000C8C4A /* HeaderCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		1B12B5A321145ADD0014DAC3 /* VC7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC7.swift; sourceTree = "<group>"; };
 		1B12B5A521145AE50014DAC3 /* VC8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC8.swift; sourceTree = "<group>"; };
 		1B12B5A721145AEF0014DAC3 /* VC9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC9.swift; sourceTree = "<group>"; };
-		1B1EC6FD212AC36A000C8C4A /* HeaderCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderCVC.swift; path = Cell/HeaderCVC/HeaderCVC.swift; sourceTree = "<group>"; };
+		1B1EC701212AF7ED000C8C4A /* HeaderCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +74,10 @@
 		1B12B5682114509F0014DAC3 /* StepperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1B1EC6FF212AF7ED000C8C4A /* Cells */,
 				1B12B58621145A6E0014DAC3 /* AppSpecific */,
 				1B12B58821145A6E0014DAC3 /* Resources */,
 				1B12B57B21145A6E0014DAC3 /* ViewControllers */,
-				1B1EC6FD212AC36A000C8C4A /* HeaderCVC.swift */,
 			);
 			path = StepperDemo;
 			sourceTree = "<group>";
@@ -222,6 +222,22 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		1B1EC6FF212AF7ED000C8C4A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B1EC700212AF7ED000C8C4A /* HeaderCVC */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1B1EC700212AF7ED000C8C4A /* HeaderCVC */ = {
+			isa = PBXGroup;
+			children = (
+				1B1EC701212AF7ED000C8C4A /* HeaderCVC.swift */,
+			);
+			path = HeaderCVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,7 +312,7 @@
 				1B12B5A421145ADD0014DAC3 /* VC7.swift in Sources */,
 				1B12B5A821145AEF0014DAC3 /* VC9.swift in Sources */,
 				1B12B5A021145AC90014DAC3 /* VC5.swift in Sources */,
-				1B1EC6FE212AC36A000C8C4A /* HeaderCVC.swift in Sources */,
+				1B1EC702212AF7ED000C8C4A /* HeaderCVC.swift in Sources */,
 				1B12B59821145A9A0014DAC3 /* VC1.swift in Sources */,
 				1B12B59021145A6F0014DAC3 /* AppDelegate.swift in Sources */,
 				1B12B5A221145AD30014DAC3 /* VC6.swift in Sources */,
@@ -429,15 +445,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E7B9T3P867;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/StepperDemo/Resources/Plist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kanhasoft.StepperDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stepper.StepperDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,15 +464,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E7B9T3P867;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/StepperDemo/Resources/Plist/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kanhasoft.StepperDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stepper.StepperDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

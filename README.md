@@ -15,9 +15,6 @@ This is main view controller where scrolls and selection managing to change view
 Currently there are 9 view controller take for demo app, you can add and remove it as per your requirements.
 
 
-
-
-
-
-
-
+<p align="center">
+    <img src ="StepperDemo.gif" />
+</p>

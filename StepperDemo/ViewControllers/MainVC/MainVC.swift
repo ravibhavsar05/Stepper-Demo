@@ -2,9 +2,6 @@
 //  MainVC.swift
 //  StepperDemo
 //
-//  Created by Sagar on 03/08/18.
-//  Copyright © 2018 Sagar. All rights reserved.
-//
 
 import UIKit
 import CoreSpotlight
